@@ -15,7 +15,7 @@ const App = () => {
 
     return (
         <div className="app">
-            <Header activeNavItem={activeNavItem} handleNavItemClick={handleNavItemClick} />
+            <Header />
 
             <div className="container">
                 

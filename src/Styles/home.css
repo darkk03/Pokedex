@@ -1,0 +1,135 @@
+.home{
+    max-height: 769px;
+    overflow: hidden;
+}
+
+.home-content{
+    display: flex;
+    flex-grow: 1;
+    padding: 33px 40px;
+    overflow: hidden; 
+    max-width: 1520px; 
+    margin: 0 auto; 
+}
+
+/* .block1{
+    height: 700px;
+} */
+
+.main-text{
+    width: 449px;
+    height: 336px;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+.main-text-bold{
+    color: #000;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; 
+}
+
+.under-main-text{
+    margin-top: 20px;
+    width: 706px;
+    height: 163px;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.SeePokemons {
+    text-align: center;
+    margin-top: 90px;
+    padding: 10px 56px;
+    border: none;
+    font-size: 34px;
+    color: #fff;
+    border-radius: 30px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.SeePokemons {
+    background: red;
+    box-shadow: red;
+}
+
+.SeePokemons:hover {
+    box-shadow: 0 0 5px red,
+                0 0 25px red;
+}
+
+.pikachu {
+    width: 586px;
+    height: 426px;
+    transform: translateY(-60%);
+    background-repeat: no-repeat;
+    margin-left: 250px;
+    z-index: -1;
+    position: relative;
+}
+
+.pokeball-left{
+    width: 438.566px;
+    height: 457.893px;
+    background-repeat: no-repeat;
+    transform: translateY(-185%) translateX(-58%) rotate(21deg);
+    filter: blur(2px);
+}
+
+.pokeball-righ{
+    width: 438.566px;
+    height: 457.893px;
+    background-repeat: no-repeat;
+    transform: translateY(-350%) translateX(370%) rotate(353deg);   
+    filter: blur(3px); 
+}
+
+.cloud1{
+    width: 816.566px;
+    height: 458.893px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform:  translateY(-437%) translateX(75%) rotate(359deg);
+    filter: blur(1px);
+    z-index: -1;
+    position: relative;
+}
+
+.pokeball-center{
+    width: 329.566px;
+    height: 329.893px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-744%) translateX(186%) rotate(337deg);
+    filter: blur(1px);
+    z-index: -2;
+    position: relative;
+}
+
+.cloud2{
+    width: 1417.566px;
+    height: 625.893px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-438%) translateX(69%) rotate(359deg);
+    filter: blur(1px);
+    z-index: 1;
+    position: relative;
+}
+
+
+

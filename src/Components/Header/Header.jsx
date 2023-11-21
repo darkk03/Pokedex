@@ -29,16 +29,16 @@ const Header = () => {
       <div className="header-content">
         <img src={imglogo} className="logo" alt="Pokemon Logo" />
         <div className="nav-list" ref={navListRef}>
-          <Link to={ROUTES.HOME} className={`nav-element nav-element-${activeNavItem}`} onClick={() => handleNavItemClick("Home")}>
+          <Link to={ROUTES.HOME} className={`nav-element ${activeNavItem === "Home" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Home")}>
             Home
           </Link>
-          <Link to={ROUTES.POKEDEX} className={`nav-element nav-element-${activeNavItem}`} onClick={() => handleNavItemClick("Pokedex")}>
+          <Link to={ROUTES.POKEDEX} className={`nav-element ${activeNavItem === "Pokedex" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Pokedex")}>
             Pokedex
           </Link>
-          <Link to={ROUTES.LEGENDARIES} className={`nav-element nav-element-${activeNavItem}`} onClick={() => handleNavItemClick("Legendaries")}>
+          <Link to={ROUTES.LEGENDARIES} className={`nav-element ${activeNavItem === "Legendaries" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Legendaries")}>
             Legendaries
           </Link>
-          <Link to={ROUTES.OTHERS} className={`nav-element-others nav-element-${activeNavItem}`} onClick={() => handleNavItemClick("Others")}>
+          <Link to={ROUTES.OTHERS} className={`nav-element-others ${activeNavItem === "Others" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Others")}>
             Others
           </Link>
           {activeNavItem && (
