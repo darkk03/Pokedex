@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Pokedex = () => {
 
     return(
-        <div>Pokedex123</div>
+        <div>Pokedex1233</div>
     );
 };
 

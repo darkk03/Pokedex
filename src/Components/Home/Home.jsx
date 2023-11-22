@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "../../Styles/home.css"
-import pikachu from "../../Images/Pikachu.png"
+import pikachu from "../../Images/pikachu.png"
 import pokeball from "../../Images/pokebal-left.png"
 import ash from "../../Images/ash.png"
 import cloud from "../../Images/cloud.png"
