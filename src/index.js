@@ -6,11 +6,16 @@ import App from './Components/App/App';
 import store from './feauters/store';
 import './Styles/index.css';
 
-const root = createRoot(document.getElementById("root"));
-root.render(
-  <Provider store={store}>
+const root = document.getElementById('root');
+
+if (root) {
+  createRoot(root).render(
     <BrowserRouter>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </BrowserRouter>
-  </Provider>
-);
+  );
+} else {
+  console.error("Root element not found");
+}
