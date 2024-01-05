@@ -6,6 +6,8 @@ import Header from "../Header/Header";
 
 const App = () => {
 
+    
+
     return (
         <div className="app">
             <Header />
@@ -15,9 +17,6 @@ const App = () => {
                 <AppRoutes />
 
             </div>
-
-
-            {/* <Footer /> */}
         </div>
     );
 };
