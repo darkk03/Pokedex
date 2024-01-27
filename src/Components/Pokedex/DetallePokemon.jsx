@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "../../Styles/singlepoke.css";
+
 function DetallePokemon({mostrar, pokemon, cerrar}) {
   
     return (

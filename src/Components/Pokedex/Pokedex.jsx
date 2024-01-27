@@ -5,14 +5,14 @@ import DetallePokemon from './DetallePokemon'
 import Buscador from './Buscador'
 import { useState } from 'react'
 import React from 'react';
+import "../../Styles/poke.css";
 
 function Pokemon({ id, nombre, imagen, verPokemon }) {
   return (
     <div className='pokemon-card' onClick={verPokemon}>
       <img src={imagen} alt={nombre} className='pokemon-imagen' />
       <p className='pokemon-titulo'>
-        <span>#{id}</span>
-        <span>{nombre}</span>
+        {nombre}
       </p>
     </div>
   )

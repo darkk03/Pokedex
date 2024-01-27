@@ -26,14 +26,11 @@ function usePokemones() {
   }
 
   const getPokemones = async (url = URL_DEFAULT) => {
-    // Recuperamos el listado de los pokemones
+
     const response = await fetch(url)
     const listaPokemones = await response.json()
-    const { next, results } = listaPokemones // Guardamos el result
-    
-    // Ahora por cada result (pokemon), necesitamos obtener la información
-    // necesitamos esperar a que se resuelvan todas
-    // por eso recurrimos a Primise.all
+    const { next, results } = listaPokemones 
+
     const newPokemones = await Promise.all(
       results.map((pokemon) => fetchPokemon(pokemon.url))
     )

@@ -35,11 +35,14 @@ const Header = () => {
           <Link to={ROUTES.POKEDEX} className={`nav-element ${activeNavItem === "Pokedex" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Pokedex")}>
             Pokedex
           </Link>
-          <Link to={ROUTES.LEGENDARIES} className={`nav-element ${activeNavItem === "Legendaries" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Legendaries")}>
-            Legendaries
+          <Link to={ROUTES.GAMES} className={`nav-element ${activeNavItem === "Games" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Games")}>
+            Games
           </Link>
-          <Link to={ROUTES.OTHERS} className={`nav-element-others ${activeNavItem === "Others" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Others")}>
-            Others
+          <Link to={ROUTES.MOVES} className={`nav-element ${activeNavItem === "Moves" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Moves")}>
+            Moves
+          </Link>
+          <Link to={ROUTES.LOCATIONS} className={`nav-element ${activeNavItem === "Locations" ? `nav-element-${activeNavItem}` : ""}`} onClick={() => handleNavItemClick("Locations")}>
+          Locations
           </Link>
           {activeNavItem && (
             <div
