@@ -1,5 +1,5 @@
 .home{
-    max-height: 769px;
+    max-height: 757px;
     overflow: hidden;
 }
 
@@ -69,7 +69,6 @@
 }
 
 .pikachu {
-    width: 586px;
     height: 426px;
     transform: translateY(-60%);
     background-repeat: no-repeat;
@@ -82,16 +81,18 @@
     width: 438.566px;
     height: 457.893px;
     background-repeat: no-repeat;
-    transform: translateY(-185%) translateX(-58%) rotate(21deg);
+    transform: translateY(-191%) translateX(-224%) rotate(21deg);
     filter: blur(2px);
+    margin: 0 auto;
 }
 
 .pokeball-righ{
     width: 438.566px;
     height: 457.893px;
     background-repeat: no-repeat;
-    transform: translateY(-350%) translateX(370%) rotate(353deg);   
+    transform: translateY(-350%) translateX(195%) rotate(353deg);   
     filter: blur(3px); 
+    margin: 0 auto;
 }
 
 .cloud1{
@@ -99,10 +100,11 @@
     height: 458.893px;
     background-size: cover;
     background-repeat: no-repeat;
-    transform:  translateY(-437%) translateX(75%) rotate(359deg);
+    transform:  translateY(-437%) translateX(2%) rotate(359deg);
     filter: blur(1px);
     z-index: -1;
     position: relative;
+    margin: 0 auto;
 }
 
 .pokeball-center{
@@ -110,10 +112,11 @@
     height: 329.893px;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateY(-744%) translateX(186%) rotate(337deg);
+    transform: translateY(-744%) translateX(-60%) rotate(337deg);
     filter: blur(1px);
     z-index: -2;
     position: relative;
+    margin: 0 auto;
 }
 
 .cloud2{
@@ -121,10 +124,11 @@
     height: 625.893px;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateY(-438%) translateX(69%) rotate(359deg);
+    transform: translateY(-438%) translateX(50%) rotate(359deg);
     filter: blur(1px);
     z-index: 1;
     position: relative;
+    margin: 0 auto;
 }
 
 

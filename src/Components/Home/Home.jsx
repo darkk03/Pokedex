@@ -1,14 +1,11 @@
-import React, { useState } from "react";
-
-import "../../Styles/home.css"
-import pikachu from "../../Images/pikachu.png"
-import pokeball from "../../Images/pokebal-left.png"
-import ash from "../../Images/ash.png"
-import cloud from "../../Images/cloud.png"
-
+import React from "react";
+import "../../Styles/home.css";
+import pikachu from "../../Images/pikachu.png";
+import pokeball from "../../Images/pokebal-left.png";
+import ash from "../../Images/ash.png";
+import cloud from "../../Images/cloud.png";
 
 const Home = () => {
-
     return(
         <div className="home">
             <div className="home-content">
