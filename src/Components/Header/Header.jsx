@@ -1,16 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../Styles/Header.css";
 import imglogo from "../../Images/pokemonlogo.png";
 import { ROUTES } from "../../utils/routes";
 
 const Header = () => {
+  const location = useLocation(); // Добавляем использование useLocation
   const [activeNavItem, setActiveNavItem] = useState("Home");
   const [lineWidth, setLineWidth] = useState(0);
   const [linePosition, setLinePosition] = useState(0);
   const navListRef = useRef(null);
 
   useEffect(() => {
+    // Определяем активный элемент на основе текущего маршрута
+    const currentPath = location.pathname;
+    const activeItem = currentPath === ROUTES.HOME ? "Home" : currentPath === ROUTES.POKEDEX ? "Pokedex" : "Home";
+    setActiveNavItem(activeItem);
+
     const activeElement = document.querySelector(`.nav-element-${activeNavItem}`);
     const navList = navListRef.current;
 
@@ -18,7 +24,7 @@ const Header = () => {
       setLineWidth(activeElement.offsetWidth);
       setLinePosition(activeElement.offsetLeft - navList.offsetLeft);
     }
-  }, [activeNavItem]);
+  }, [location, activeNavItem]); // Добавляем location в массив зависимостей
 
   const handleNavItemClick = (item) => {
     setActiveNavItem(item);

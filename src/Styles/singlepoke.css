@@ -1,5 +1,5 @@
 .modal-container {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(223, 220, 175, 0.733);
     position: fixed;
     top: 0;
     left: 0;
@@ -12,6 +12,7 @@
   
   .modal-body {
     background-color: #FFD500;
+    box-shadow:0 0 15px 0 #000000;
     width: 40%;
     min-width: 400px;
     border-radius: 10px;

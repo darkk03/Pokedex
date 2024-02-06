@@ -4,6 +4,8 @@ import pikachu from "../../Images/pikachu.png";
 import pokeball from "../../Images/pokebal-left.png";
 import ash from "../../Images/ash.png";
 import cloud from "../../Images/cloud.png";
+import { ROUTES } from "../../utils/routes";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return(
@@ -16,9 +18,11 @@ const Home = () => {
                     <div className="under-main-text">
                         You can know the type of Pokemon, its strengths, disadvantages and abilities
                     </div>
-                    <button className="SeePokemons">
-                        See Pokemons
-                    </button>
+                    <Link to={ROUTES.POKEDEX}> 
+                        <button className="SeePokemons">
+                            See Pokemons
+                        </button>
+                    </Link>
                     <div className="pikachu" style={{ backgroundImage: `url(${pikachu})` }} />
                 </div>
                 <div className="block2">
